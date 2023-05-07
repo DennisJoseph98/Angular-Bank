@@ -1,8 +1,8 @@
 <h2 class="text-light p-3">{{data}}</h2>
 <h2 class="lsign mt-5 text-white">Sign In</h2>
 <div class="container w-50 bg-light mt-5 opacity-75 form-control">
-    <p><input (change)="unameChange($event)" type="text" [placeholder]="placeholderData"></p>
-    <p><input type="text" placeholder="Enter password"></p>
-    <p><button type="button" (click)="login()" class = "btn btn-outline-primary">Login</button></p>
+    <p><input #uname type="text" [placeholder]="placeholderData"></p>
+    <p><input #psw type="text" placeholder="Enter password"></p>
+    <p><button type="button" (click)="login(uname,psw)" class = "btn btn-outline-primary">Login</button></p>
     <p class="text-">don't have an account? <a href="">create account</a></p>
 </div>

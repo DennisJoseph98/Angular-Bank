@@ -6,18 +6,20 @@ import { Component,OnInit } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+       uname:any;
+       psw:any;
         data="Your perfect banking partner"
         placeholderData="Enter account number"
         constructor() {}
         ngOnInit(): void{
           
         }
-        login(){
+        login(a:any,b:any){
+         this.uname=a.value;
+         this.psw=b.value;
+         console.log(this.uname,this.psw);
+         
           alert("login clicked")
         }
-        unameChange(event:any){
-          console.log(event);
-          console.log(event.target.value);
-          
-        }
+        
 }
