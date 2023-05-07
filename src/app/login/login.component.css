@@ -1,0 +1,16 @@
+.lsign{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+input{
+    width: 80%;
+}
+p{
+    text-align: center;
+}
+.container{
+    border-radius: 10px;
+    padding-top: 20px;
+}
