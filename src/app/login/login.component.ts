@@ -6,20 +6,19 @@ import { Component,OnInit } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-       uname:any;
-       psw:any;
+      
+        uname:any;
+        psw:any;
         data="Your perfect banking partner"
         placeholderData="Enter account number"
         constructor() {}
         ngOnInit(): void{
           
         }
-        login(a:any,b:any){
-         this.uname=a.value;
-         this.psw=b.value;
-         console.log(this.uname,this.psw);
+        login(){
+        
          
-          alert("login clicked")
+          alert(this.uname)
         }
         
 }
